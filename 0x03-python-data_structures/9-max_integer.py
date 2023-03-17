@@ -2,6 +2,8 @@
 def max_integer(my_list=[]):
     i = len(my_list) - 1
     k = len(my_list) - 1
+    if my_list == []:
+        return None
     while i > 1:
         j = 0
         while j < i:
