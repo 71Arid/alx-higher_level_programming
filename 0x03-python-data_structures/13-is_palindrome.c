@@ -1,14 +1,15 @@
 #include "lists.h"
 #include <stddef.h>
 /**
- * is_palindrome - checks for palindrome
- * @head: head of list
- * Return: 1 if palindrome 0 if not
+ * is_palindrome - checks if a singly linked list is a palindrome
+ * @head: double pointer to the head of the list
+ *
+ * Return: 0 if it is not a palindrome, 1 if it is a palindrome
  */
 int is_palindrome(listint_t **head)
 {
 	listint_t *slow = *head, *fast = *head, *prev = NULL, *temp;
-	int pali = 1;
+	int is_palindrome = 1;
 
 	if (*head == NULL || (*head)->next == NULL)
 		return (1);
@@ -19,7 +20,7 @@ int is_palindrome(listint_t **head)
 		temp = slow->next;
 		slow->next = prev;
 		prev = slow;
-		slow= temp;
+		slow = temp;
 	}
 
 	if (fast)
@@ -28,11 +29,12 @@ int is_palindrome(listint_t **head)
 	while (slow)
 	{
 		if (prev->n != slow->n)
-			pali = 0;
+			is_palindrome = 1;
 		temp = prev->next;
 		prev->next = slow;
 		slow = slow->next;
 		prev->next->next = temp;
 	}
-	return (pali);
-} 
+
+	return (is_palindrome);
+}
