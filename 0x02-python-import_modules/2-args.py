@@ -8,7 +8,7 @@ if __name__ == "__main__":
     elif argc == 2:
         print(f"{argc - 1} argument:")
     else:
-        print(f"{argc - 1} argument:")
+        print(f"{argc - 1} arguments:")
 
     for i in range(1, argc):
         print(f"{i}: {sys.argv[i]}")
