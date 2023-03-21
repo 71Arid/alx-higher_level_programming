@@ -4,7 +4,7 @@ if __name__ == "__main__":
 
     argc = len(sys.argv)
     if argc == 1:
-        print(f"0 arguments.")
+        print(f"0 argument.")
     else:
         print(f"{argc - 1} arguments:")
 
