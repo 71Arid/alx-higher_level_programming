@@ -5,8 +5,10 @@ if __name__ == "__main__":
     argc = len(sys.argv)
     if argc == 1:
         print(f"0 arguments.")
+    elif argc == 2:
+        print(f"{argc - 1} argument:")
     else:
-        print(f"{argc - 1} arguments:")
+        print(f"{argc - 1} argument:")
 
     for i in range(1, argc):
         print(f"{i}: {sys.argv[i]}")
