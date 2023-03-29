@@ -1,14 +1,5 @@
 #!/usr/bin/python3
+""" Define a class Square """
 class Square:
-    """
-    A class used to represent a square.
-
-    Attributes
-    ----------
-    None
-
-    Methods
-    -------
-    None
-    """
+""" Represent a class square """
     pass
