@@ -1,7 +1,2 @@
-#!/bin/bash
-
-# script showing a list of databases
-
+-- all databases in MySQL server
 SHOW DATABASES;
-
-exit;
