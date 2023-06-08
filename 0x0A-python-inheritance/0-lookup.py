@@ -1,8 +1,9 @@
 #!/usr/bin/python3
 """lookup module"""
 
+
 def lookup(obj):
-"""finds attributes in dictionaries"""
+    """finds attributes in dictionaries"""
 
     list = []
     obj_atrributes = obj.__dict__.keys()
