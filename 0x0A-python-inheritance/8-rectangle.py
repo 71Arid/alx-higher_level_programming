@@ -9,7 +9,9 @@ class Rectangle(BaseGeometry):
     def __int__(self, width, height):
         """ validates width and height as private variables"""
 
-        self.__width = width
-        self.__height = height
+        self.__width = 0
+        self.__height = 0
         self.integer_validator("width", width)
         self.integer_validator("height", height)
+        self.__width = width
+        self.__height = height
