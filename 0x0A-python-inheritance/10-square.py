@@ -12,15 +12,9 @@ class Square(Rectangle):
         Args:
             size (int): The size of the square
         """
-        super().integer_validator("size", size)
+        self.integer_validator("size", size)
         self.__size = size
 
     def area(self):
         """area of the rectangle."""
         return self.__size * self.__size
-
-    def __str__(self):
-        """print() and str() representation"""
-        st = "[" + str(self.__class__.__name__) + "] "
-        st += str(self.__width) + "/" + str(self.__height)
-        return st
