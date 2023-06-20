@@ -5,4 +5,4 @@ while (args[i]) {
   i = i + 1;
 }
 
-if (i === 2) { console.log('No Argument'); } else { console.log(args[2]); }
+if (i === 2) { console.log('No argument'); } else { console.log(args[2]); }
