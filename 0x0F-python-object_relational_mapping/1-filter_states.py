@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+"""  filter states """
+
 import MySQLdb
 import sys
 if __name__ == '__main__':
