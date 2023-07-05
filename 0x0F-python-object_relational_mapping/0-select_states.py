@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+""" fetches all from states """
+
 import MySQLdb
 import sys
 if __name__ == '__main__':
