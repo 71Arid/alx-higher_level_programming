@@ -5,6 +5,7 @@ from sqlalchemy import ForeignKey
 from sqlalchemy import Column, String, Integer
 from relationship_state import Base
 
+
 class City(Base):
     """module representation of table city"""
 
