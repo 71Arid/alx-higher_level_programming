@@ -4,9 +4,9 @@
 import sys
 from relationship_state import Base, State
 from relationship_city import City
-
 from sqlalchemy import (create_engine)
 from sqlalchemy.orm import sessionmaker
+
 
 if __name__ == "__main__":
     url = 'mysql+mysqldb://{}:{}@localhost/{}'.format(
