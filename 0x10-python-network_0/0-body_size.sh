@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 # script to display content size of body
 # Check if the URL argument is provided
 if [ $# -ne 1 ]; then
