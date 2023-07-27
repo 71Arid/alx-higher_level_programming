@@ -1,8 +1,10 @@
 #!/usr/bin/python3
-# find peak function
+''' find peak function
+'''
 
 def find_peak(list_of_integers):
-    # the code base... binary search
+    ''' the code base... binary search
+    '''
 
     if not list_of_integers:
         return None
