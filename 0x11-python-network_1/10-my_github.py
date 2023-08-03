@@ -1,5 +1,17 @@
 #!/usr/bin/python3
 """
+This script fetches the GitHub user ID using the GitHub API
+with Basic Authentication using a personal access token.
+The script expects two command-line arguments: the GitHub username
+and the personal access token.
+
+Usage: python script.py <username> <personal_access_token>
+
+Arguments:
+<username> (required): The GitHub username of the user.
+<personal_access_token> (required): The personal access token
+used for authentication.
+
 """
 
 import sys
