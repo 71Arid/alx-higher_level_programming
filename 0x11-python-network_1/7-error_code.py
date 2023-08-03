@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-3-error_code.py
+7-error_code.py
 
 This script sends a GET request to a specified URL and handles HTTP errors.
 
@@ -22,13 +22,13 @@ Note:
 """
 
 import sys
-import urllib.request
+import requests
 
 if __name__ == "__main__":
     url = str(sys.argv[1])
     try:
-        with urllib.request.urlopen(url) as r:
-            data = r.read().decode('utf-8')
-            print(data)
-    except urllib.error.HTTPError as e:
-        print("Error code:", e.code)
+        r = requests.get(url)
+        r.raise_for_status()
+        print(r.text)
+    except requests.exceptions.RequestException as e:
+        print("Error code:", e.response.status_code)

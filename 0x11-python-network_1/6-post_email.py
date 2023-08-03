@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-2-post_email.py
+6-post_email.py
 
 This script sends a POST request to a specified URL with an email parameter.
 The email parameter is provided as a command-line argument
