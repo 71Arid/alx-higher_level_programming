@@ -28,13 +28,9 @@ Note:
 """
 
 import sys
-import urllib.request
-import urllib.parse
+import requests
 
 if __name__ == "__main__":
     values = {'email': str(sys.argv[2])}
-    data = urllib.parse.urlencode(values).encode('utf-8')
-    url = str(sys.argv[1]) + '?'
-    with urllib.request.urlopen(url, data=data) as resp:
-        response_data = resp.read().decode('utf-8')
-        print(response_data)
+    r = requests.post(sys.argv[1], data=values)
+    print(r.text)
