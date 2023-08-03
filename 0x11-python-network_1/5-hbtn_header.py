@@ -17,5 +17,9 @@ import requests
 
 if __name__ == "__main__":
     url = sys.argv[1]
-    r = requests.get(url)
-    print(r.headers['X-Request-Id'])
+    try:
+        response = requests.get(url)
+        if 'X-Request-Id' in response.headers:
+            print(response.headers['X-Request-Id'])
+    except requests.exceptions.RequestException as e:
+        print("Error: {}".format(e))
